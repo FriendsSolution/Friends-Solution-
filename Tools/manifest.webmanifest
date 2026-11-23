@@ -1,0 +1,19 @@
+{
+  "name": "FriendsSolution Tools",
+  "short_name": "Friends Tools",
+  "description": "FriendsSolution calculators and everyday tools",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f2f7ff",
+  "theme_color": "#0d3976",
+  "icons": [
+    {
+      "src": "../friends-solution-logo.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
