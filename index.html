@@ -69,12 +69,71 @@ footer{background:linear-gradient(115deg,#061c4a,#064fb1,#087fd2);border-top:5px
 @media(max-width:900px){.popular-grid{grid-template-columns:repeat(3,1fr)}.promo-grid{grid-template-columns:1fr}.people-art{min-height:235px}.person{height:175px}.person:nth-child(2){height:198px}}
 @media(max-width:600px){.banner-inner{display:flex;flex-direction:column;align-items:stretch}.banner-brand{gap:11px}.banner-logo{width:74px;height:74px;border-width:3px}.banner-title{font-size:clamp(27px,8vw,39px)}.banner-sub{font-size:13px}.banner-motto{font-size:12px}.contact{display:grid;grid-template-columns:1fr;gap:2px;font-size:12px;padding:9px 11px}.location{margin-top:3px}.nav{gap:8px;padding:8px 10px}.nav .logo{width:38px;height:38px}.brand{font-size:16px}.nav>.btn{margin-left:auto;padding:10px 13px;font-size:12px}.hero{padding:35px 14px 42px}.hero-inner{grid-template-columns:1fr}.hero h1{font-size:clamp(38px,11vw,55px)}.preview{transform:none;padding:13px}.preview-item{min-height:70px}.people-art{min-height:205px;border-width:5px}.person{height:150px;font-size:56px}.person:nth-child(2){height:170px}.showcase{padding:27px 12px 8px}.ribbon-title{align-items:flex-start}.ribbon-title h2{font-size:18px;padding:9px 13px}.ribbon-title a{font-size:12px;padding:9px 11px}.popular-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.popular-card{min-height:115px}.popular-card .pico{font-size:33px}.popular-card strong{font-size:14px}.promo{min-height:132px;padding:15px}.promo .promo-icon{font-size:36px}.promo h3{font-size:17px}.trust-inner{justify-content:flex-start;font-size:13px}.footer-inner{gap:12px}}
 
+
+/* Full-width FriendsSolution identity banner */
+.top-banner{padding:16px 18px 13px;background:
+ radial-gradient(circle at 12% 8%,#1a8ce8 0,transparent 28%),
+ radial-gradient(circle at 88% 0%,#24b4e8 0,transparent 25%),
+ linear-gradient(112deg,#041c50 0%,#0752b5 52%,#0785d5 100%);
+ border-bottom:5px solid #ffd42e;overflow:hidden}
+.banner-inner{max-width:1320px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px 22px;align-items:center}
+.banner-brand{gap:17px}
+.banner-logo{width:116px;height:116px;flex:0 0 auto;border:5px solid #ffd42e;box-shadow:0 5px 0 #b95a00,0 9px 22px #00143c99}
+.banner-title{font-size:clamp(34px,5.2vw,64px);font-weight:1000;letter-spacing:-1.5px;text-shadow:3px 4px 0 #071b49,0 0 16px #ffd42e}
+.banner-sub{font-size:clamp(15px,2.1vw,23px);color:#fff06a;font-weight:950;margin-top:5px}
+.banner-motto{font-size:clamp(13px,1.7vw,19px);margin-top:10px;padding:7px 20px;background:linear-gradient(#ffe85a,#ffc51c);border:2px solid #fff2a3;box-shadow:0 3px 0 #9c5700}
+.banner-side{text-align:right;align-self:center}
+.banner-slogan{font-size:clamp(17px,2.4vw,28px);font-style:italic;font-weight:950;color:#fff4a4;text-shadow:1px 2px 2px #001c4e}
+.banner-connect{display:inline-block;margin-top:10px;background:#ffda2d;color:#082657;border-radius:30px;padding:8px 16px;font-size:clamp(13px,1.5vw,18px);font-weight:1000;box-shadow:0 4px 0 #a75b00}
+.banner-connect b{color:#e34b19;padding:0 5px}
+.banner-apps{grid-column:1/-1;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px}
+.banner-apps>div{min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:2px;padding:8px 5px;border:1px solid #ffffffa8;border-radius:13px;background:linear-gradient(145deg,#fff,#eaf5ff);color:#092b67;box-shadow:0 3px 8px #00183c55}
+.banner-apps span{font-size:clamp(22px,3vw,34px);line-height:1.1}
+.banner-apps strong{font-size:clamp(11px,1.25vw,15px);line-height:1.1;font-weight:950}
+.banner-apps small{font-size:clamp(9px,1vw,12px);line-height:1.1;color:#415777;font-weight:700}
+.contact{grid-column:1/-1;display:flex;align-items:center;justify-content:center;gap:clamp(10px,3vw,35px);flex-wrap:wrap;padding:9px 14px;border:2px solid #fff5b4;background:linear-gradient(90deg,#fff8c7,#fff);border-radius:12px;color:#092b67;font-size:clamp(12px,1.35vw,16px);font-weight:900}
+.contact a{color:#092b67;font-weight:950}
+.location{margin:0;background:linear-gradient(#ffe34b,#ffc51b);color:#082657;padding:7px 14px;border-radius:8px;font-size:clamp(11px,1.2vw,14px)}
+@media(max-width:700px){
+ .top-banner{padding:12px 10px 10px}
+ .banner-inner{display:grid;grid-template-columns:1fr;gap:10px}
+ .banner-brand{gap:10px}
+ .banner-logo{width:76px;height:76px;border-width:3px}
+ .banner-title{font-size:clamp(29px,8.5vw,43px);letter-spacing:-.8px}
+ .banner-sub{font-size:clamp(12px,3.5vw,16px);line-height:1.2}
+ .banner-motto{font-size:12px;padding:5px 11px;margin-top:7px}
+ .banner-side{display:flex;align-items:center;justify-content:space-between;gap:8px;text-align:left}
+ .banner-slogan{font-size:15px}
+ .banner-connect{font-size:12px;padding:7px 10px;margin:0;white-space:nowrap}
+ .banner-apps{grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
+ .banner-apps>div{padding:7px 3px;min-height:72px;border-radius:10px}
+ .banner-apps span{font-size:25px}
+ .banner-apps strong{font-size:10px}
+ .banner-apps small{font-size:9px}
+ .contact{display:flex;justify-content:center;gap:5px 13px;padding:8px;font-size:11px}
+ .location{width:100%;text-align:center;font-size:11px}
+}
+@media(max-width:380px){
+ .banner-apps{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .banner-apps>div{min-height:62px}
+ .banner-side{align-items:flex-start;flex-direction:column}
+}
 </style>
 </head>
 <body>
 <div class="top-banner"><div class="banner-inner">
 <div class="banner-brand"><img class="banner-logo" src="friends-solution-logo.png" alt="FriendsSolution logo"><div><div class="banner-title">FriendsSolution</div><div class="banner-sub">Innovative Solutions for a Better Tomorrow</div><div class="banner-motto">Connect ★ Share ★ Grow</div></div></div>
-<div class="contact">✉ <a href="mailto:friendssolution99@gmail.com">friendssolution99@gmail.com</a><br>🌐 <a href="https://friendssolution.github.io/">https://friendssolution.github.io</a><span class="location">FRIENDS SOLUTION · BHUBANESWAR, ODISHA</span></div>
+<div class="banner-side"><div class="banner-slogan">Together for a Digital India</div><div class="banner-connect">CONNECT <b>★</b> SHARE <b>★</b> GROW</div></div>
+<div class="banner-apps" aria-label="FriendsSolution apps">
+  <div><span>👥</span><strong>FriendsBook</strong><small>Social Media</small></div>
+  <div><span>💬</span><strong>FM Friends</strong><small>Messenger</small></div>
+  <div><span>▶️</span><strong>Friend'sTube</strong><small>Video Platform</small></div>
+  <div><span>📸</span><strong>InstaFriend</strong><small>Photo Sharing</small></div>
+  <div><span>🛒</span><strong>Friends Market</strong><small>Online Shopping</small></div>
+  <div><span>🧮</span><strong>Friends Calculator</strong><small>Tools & Utilities</small></div>
+  <div><span>🌱</span><strong>AUL Agro</strong><small>Agri Solutions</small></div>
+</div>
+<div class="contact"><div>✉ <a href="mailto:friendssolution99@gmail.com">friendssolution99@gmail.com</a></div><div>🌐 <a href="https://friendssolution.github.io/">https://friendssolution.github.io</a></div><span class="location">FRIENDS SOLUTION · BHUBANESWAR, ODISHA</span></div>
 </div></div>
 <header><nav class="nav">
 <img class="logo" src="friends-solution-logo.png" alt="FriendsSolution logo">
