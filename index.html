@@ -18,29 +18,100 @@ main{min-height:60vh}.section{max-width:1180px;margin:auto;padding:48px 18px}.se
 footer{background:#061a3b;color:#dceaff;padding:28px 18px}.footer-inner{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer-inner a{color:white}.footline{max-width:1180px;margin:18px auto 0;border-top:1px solid #ffffff2b;padding-top:12px;font-size:12px}
 @media(max-width:900px){.tool-grid{grid-template-columns:repeat(3,1fr)}.hero-inner{grid-template-columns:1fr}.navlinks{display:none}.contact{text-align:left}}
 @media(max-width:600px){.tool-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.tool-card{padding:13px;min-height:165px}.tool-card h3{font-size:15px}.section{padding:36px 13px}.hero{padding:38px 15px}.hero p{font-size:16px}.fields{grid-template-columns:1fr}.field.full{grid-column:auto}.banner-inner{align-items:flex-start}.contact{font-size:12px}.preview{padding:13px}}
+
+/* FriendsSolution reference-inspired home redesign */
+.top-banner{background:linear-gradient(110deg,#06275d 0%,#0756b8 55%,#12a2ef 100%);border:0;padding:13px 18px;position:relative;overflow:hidden}
+.top-banner:after{content:"";position:absolute;inset:auto -5% -70px -5%;height:100px;background:#ffd43b;border-radius:50% 50% 0 0;opacity:.14}
+.banner-inner{position:relative;z-index:1;max-width:1280px;gap:18px}
+.banner-brand{display:flex;align-items:center;gap:16px;min-width:0}
+.banner-logo{width:108px;height:108px;object-fit:contain;border-radius:50%;background:#fff;border:4px solid #ffd43b;box-shadow:0 5px 18px #00163888}
+.banner-title{font-size:clamp(30px,5vw,54px);line-height:1.02;letter-spacing:-1px;color:#fff;text-shadow:2px 3px 0 #08214c,0 0 14px #ffd43b}
+.banner-sub{font-size:clamp(14px,2vw,20px);font-weight:900;color:#ffe65e;margin-top:7px}
+.banner-motto{display:inline-block;margin-top:9px;background:#ffd42e;color:#09285a;border-radius:30px;padding:5px 17px;font-weight:950}
+.contact{font-size:14px;line-height:1.7;text-align:left;background:#ffffffeb;color:#0b2e67;border-radius:16px;padding:12px 15px;box-shadow:0 6px 18px #001b4b44}
+.contact a{color:#0b2e67;font-weight:800;text-decoration:none}.location{background:#ffcf31;color:#09285a;text-align:center}
+header{background:#07377f;border:0;box-shadow:0 5px 16px #061c3c30}
+.nav{max-width:1280px;padding:10px 18px;color:#fff}.nav .logo{width:42px;height:42px;border:2px solid #ffd43b}
+.brand{color:#fff;font-size:19px}.brand small{color:#d7eaff}.navlinks{gap:clamp(8px,2vw,22px)}.navlinks a{color:#fff;font-size:13px}.navlinks a:hover{color:#ffdf42}
+.nav>.btn{background:#ffd32e;color:#082657;box-shadow:0 4px 12px #001b4b55}
+.hero{background:radial-gradient(circle at 82% 35%,#23a0ff 0,transparent 33%),linear-gradient(115deg,#05285e 0%,#0759b9 63%,#0587d9 100%);padding:48px 18px 54px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;width:440px;height:440px;border-radius:50%;border:1px solid #ffffff22;right:-130px;top:-180px;box-shadow:0 0 0 32px #ffffff08,0 0 0 68px #ffffff06}
+.hero-inner{position:relative;z-index:1;max-width:1280px;grid-template-columns:1.05fr .95fr;gap:24px}
+.hero h1{font-size:clamp(39px,6vw,72px);text-shadow:2px 3px 0 #05265b}.hero h1 span{color:#ffdf35}
+.hero p{font-size:clamp(16px,2vw,22px);line-height:1.55}
+.hero .eyebrow{background:#ffffff22;border-color:#ffffff66}
+.hero .btn{font-size:17px;padding:15px 24px}.hero .btn.light{color:#082657}
+.preview{background:#ffffffee;color:#0b2c64;border:5px solid #ffffff55;padding:20px;transform:rotate(1deg);box-shadow:0 16px 42px #001c4a66}
+.preview h3{font-size:21px;color:#0b2c64}.preview-grid{gap:9px}.preview-item{background:#f0f6ff;border:1px solid #d4e5fb;min-height:82px}.preview-item span{font-size:29px}
+.people-art{min-height:290px;position:relative;display:flex;align-items:center;justify-content:center;gap:10px;background:linear-gradient(145deg,#80d9ff,#e2f6ff 55%,#b9ee9a);border:7px solid #ffffffd9;border-radius:32px;box-shadow:0 15px 36px #001b4a66;overflow:hidden}
+.people-art:before{content:"";position:absolute;width:340px;height:340px;border-radius:50%;background:#ffffff77;top:-160px;right:-80px}
+.person{position:relative;z-index:1;width:29%;height:205px;border-radius:90px 90px 25px 25px;background:linear-gradient(#f8bd83 0 32%,#f34c8a 32%);display:flex;align-items:flex-start;justify-content:center;padding-top:8px;font-size:70px;filter:drop-shadow(0 8px 5px #12365a44)}
+.person:nth-child(2){height:235px;background:linear-gradient(#eab184 0 30%,#ffbd22 30%);transform:translateY(-12px)}
+.person:nth-child(3){background:linear-gradient(#c98b5e 0 32%,#1679d4 32%)}
+.people-caption{position:absolute;z-index:2;bottom:12px;left:12px;right:12px;text-align:center;background:#fff;color:#0a3c82;padding:8px;border-radius:30px;font-weight:900;box-shadow:0 3px 12px #12365a22}
+.section{max-width:1280px}
+.showcase{background:#f5f9ff;padding:36px 18px 12px}
+.showcase-inner{max-width:1280px;margin:auto}
+.ribbon-title{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 16px}
+.ribbon-title h2{margin:0;background:linear-gradient(90deg,#063b9b,#087be0);color:#fff;border-radius:30px;padding:10px 20px;font-size:clamp(19px,3vw,27px);box-shadow:0 4px 12px #06418b30}
+.ribbon-title a{background:#ffcf28;color:#082657;border-radius:30px;padding:9px 15px;text-decoration:none;font-weight:900;white-space:nowrap}
+.popular-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:9px}
+.popular-card{min-height:126px;background:#fff;border:1px solid #c8d9ed;border-radius:15px;padding:13px 8px;text-align:center;box-shadow:0 3px 10px #173b6512;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.popular-card .pico{font-size:37px;line-height:1.2}.popular-card strong{color:#092c67;font-size:15px;line-height:1.2;margin-top:7px}.popular-card small{color:#44566e;font-weight:700;font-size:12px;line-height:1.25;margin-top:4px}
+.promo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}
+.promo{border-radius:17px;padding:19px;color:white;min-height:155px;box-shadow:0 7px 18px #173b6522;display:flex;gap:12px;align-items:center}
+.promo:nth-child(1){background:linear-gradient(120deg,#07852c,#57bd19)}.promo:nth-child(2){background:linear-gradient(120deg,#a500a9,#fa39b5)}.promo:nth-child(3){background:linear-gradient(120deg,#164c16,#9eae16)}
+.promo .promo-icon{font-size:45px}.promo h3{font-size:19px;margin:0 0 6px}.promo p{font-size:13px;margin:0 0 10px}.promo a{display:inline-block;background:#fff;color:#124a24;text-decoration:none;padding:7px 12px;border-radius:20px;font-weight:900;font-size:13px}
+.trust-strip{background:#073b91;color:#fff;padding:15px 18px;margin-top:26px}
+.trust-inner{max-width:1280px;margin:auto;display:flex;justify-content:space-around;gap:12px;flex-wrap:wrap;font-weight:900}.trust-inner span{padding:4px 10px}
+footer{background:linear-gradient(115deg,#061c4a,#064fb1,#087fd2);border-top:5px solid #ffd43b}
+.footer-inner{max-width:1280px}.footer-inner strong{font-size:24px;color:#ffdf3c}.footline{max-width:1280px}
+@media(max-width:900px){.popular-grid{grid-template-columns:repeat(3,1fr)}.promo-grid{grid-template-columns:1fr}.people-art{min-height:235px}.person{height:175px}.person:nth-child(2){height:198px}}
+@media(max-width:600px){.banner-inner{display:flex;flex-direction:column;align-items:stretch}.banner-brand{gap:11px}.banner-logo{width:74px;height:74px;border-width:3px}.banner-title{font-size:clamp(27px,8vw,39px)}.banner-sub{font-size:13px}.banner-motto{font-size:12px}.contact{display:grid;grid-template-columns:1fr;gap:2px;font-size:12px;padding:9px 11px}.location{margin-top:3px}.nav{gap:8px;padding:8px 10px}.nav .logo{width:38px;height:38px}.brand{font-size:16px}.nav>.btn{margin-left:auto;padding:10px 13px;font-size:12px}.hero{padding:35px 14px 42px}.hero-inner{grid-template-columns:1fr}.hero h1{font-size:clamp(38px,11vw,55px)}.preview{transform:none;padding:13px}.preview-item{min-height:70px}.people-art{min-height:205px;border-width:5px}.person{height:150px;font-size:56px}.person:nth-child(2){height:170px}.showcase{padding:27px 12px 8px}.ribbon-title{align-items:flex-start}.ribbon-title h2{font-size:18px;padding:9px 13px}.ribbon-title a{font-size:12px;padding:9px 11px}.popular-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.popular-card{min-height:115px}.popular-card .pico{font-size:33px}.popular-card strong{font-size:14px}.promo{min-height:132px;padding:15px}.promo .promo-icon{font-size:36px}.promo h3{font-size:17px}.trust-inner{justify-content:flex-start;font-size:13px}.footer-inner{gap:12px}}
+
 </style>
 </head>
 <body>
 <div class="top-banner"><div class="banner-inner">
-<div><div class="banner-title">✦ FriendsSolution ✦</div><div class="banner-sub">Innovative Solutions for a Better Tomorrow</div></div>
-<div class="contact">✉ <a href="mailto:friendssolution99@gmail.com">friendssolution99@gmail.com</a><br>🌐 <a href="https://friendssolution.github.io/">friendssolution.github.io</a><span class="location">FRIENDS SOLUTION, BHUBANESWAR, ODISHA</span></div>
+<div class="banner-brand"><img class="banner-logo" src="friends-solution-logo.png" alt="FriendsSolution logo"><div><div class="banner-title">FriendsSolution</div><div class="banner-sub">Innovative Solutions for a Better Tomorrow</div><div class="banner-motto">Connect ★ Share ★ Grow</div></div></div>
+<div class="contact">✉ <a href="mailto:friendssolution99@gmail.com">friendssolution99@gmail.com</a><br>🌐 <a href="https://friendssolution.github.io/">https://friendssolution.github.io</a><span class="location">FRIENDS SOLUTION · BHUBANESWAR, ODISHA</span></div>
 </div></div>
 <header><nav class="nav">
-<img class="logo" src="assets/IMG-20261123-WA0000.jpg" alt="FriendsSolution logo" onerror="this.style.display='none'">
+<img class="logo" src="friends-solution-logo.png" alt="FriendsSolution logo">
 <div class="brand">FriendsSolution<small>Social & Everyday Apps</small></div>
-<div class="navlinks"><a href="#about">Home</a><a href="#tools">Free Tools</a><a href="Friends%20App/">Friends Apps</a><a href="Tools/">Existing Tools</a><a href="#contact">Contact</a></div>
-<a class="btn blue" href="#tools">Explore Tools ↓</a>
+<div class="navlinks"><a href="#about">⌂ Home</a><a href="#apps">▦ Apps</a><a href="#tools">⚒ Tools</a><a href="#tools">▤ Calculator</a><a href="#resources">✉ Resources</a><a href="#contact">Contact</a></div>
+<a class="btn" href="#apps">Explore Apps ↓</a>
 </nav></header>
 <main>
 <section class="hero" id="about"><div class="hero-inner"><div>
-<span class="eyebrow">✦ FREE FRIENDSSOLUTION DIGITAL TOOLKIT</span>
-<h1>Useful tools.<br><span>Simple solutions.</span></h1>
-<p>Use practical everyday tools directly in your browser. Search the collection, open a tool, enter your details and get an instant result on your phone or computer.</p>
-<div class="actions"><a class="btn" href="#tools">Use Free Tools ↗</a><a class="btn light" href="Friends%20App/">Explore Friends Apps</a></div>
-<p class="muted" style="color:#e1efff">No account needed for the built-in tools. Your calculations run in your browser.</p>
-</div><div class="preview"><h3>Popular tools at a glance</h3><div class="preview-grid">
-<div class="preview-item"><span>🧮</span>Calculator</div><div class="preview-item"><span>🎂</span>Age Calculator</div><div class="preview-item"><span>🧾</span>GST Calculator</div><div class="preview-item"><span>🔤</span>Word Counter</div><div class="preview-item"><span>📏</span>Unit Converter</div><div class="preview-item"><span>🎨</span>Color Picker</div>
-</div></div></div></section>
+<span class="eyebrow">✦ SOCIAL & EVERYDAY APPS</span>
+<h1>A place where<br><span>everyone</span> belongs.</h1>
+<p>FriendsSolution brings social experiences and useful everyday tools together. We aim to make digital services welcoming, accessible and easier to use across devices and languages.</p>
+<div class="actions"><a class="btn" href="#apps">Explore our apps ↗</a><a class="btn light" href="#tools">Use Free Tools</a></div>
+<p class="muted" style="color:#e1efff">✓ Designed for mobile　 ✓ Accessibility-minded　 ✓ Multilingual-ready</p>
+</div><div class="people-art" aria-label="Friends using digital services"><div class="person">👨🏻‍💻</div><div class="person">👩🏽‍💻</div><div class="person">👨🏾‍💻</div><div class="people-caption">Connect · Share · Grow Together</div></div></div></section>
+<section class="showcase" id="apps"><div class="showcase-inner">
+<div class="ribbon-title"><h2>⭐ Our Popular Apps & Tools</h2><a href="#tools">All Apps & Tools →</a></div>
+<div class="popular-grid">
+<div class="popular-card"><span class="pico">👥</span><strong>FriendsBook</strong><small>Social Media</small></div>
+<div class="popular-card"><span class="pico">▶️</span><strong>Friend'sTube</strong><small>Video Platform</small></div>
+<div class="popular-card"><span class="pico">📸</span><strong>InstaFriend</strong><small>Photo Sharing</small></div>
+<div class="popular-card"><span class="pico">🛒</span><strong>Friends Market Zone</strong><small>Online Shopping</small></div>
+<div class="popular-card"><span class="pico">🧮</span><strong>Friends Calculator</strong><small>Basic & Everyday Maths</small></div>
+<div class="popular-card"><span class="pico">▦</span><strong>QR Code Maker</strong><small>Create QR Codes</small></div>
+<div class="popular-card"><span class="pico">🔊</span><strong>Text to Speech</strong><small>Convert Text to Audio</small></div>
+<div class="popular-card"><span class="pico">🖼️</span><strong>Image Editor</strong><small>Edit & Enhance Photos</small></div>
+<div class="popular-card"><span class="pico">📕</span><strong>PDF Tools</strong><small>Merge, Split, Compress</small></div>
+<div class="popular-card"><span class="pico">🔄</span><strong>Unit Converter</strong><small>All Units</small></div>
+<div class="popular-card"><span class="pico">🎨</span><strong>Color Picker</strong><small>Pick Any Color</small></div>
+<div class="popular-card"><span class="pico">▦</span><strong>More Tools</strong><small>Calculators & Utilities</small></div>
+</div>
+<div class="promo-grid" id="resources">
+<div class="promo"><div class="promo-icon">🚀</div><div><h3>Boost Your Productivity</h3><p>Useful tools · Smart apps · Time saving</p><a href="#tools">Start Now →</a></div></div>
+<div class="promo"><div class="promo-icon">🤝</div><div><h3>Join Our Community</h3><p>Get updates · Share ideas · Grow together</p><a href="#contact">Contact Us →</a></div></div>
+<div class="promo"><div class="promo-icon">🌾</div><div><h3>Support Farmers & Business</h3><p>AUL Agro FPO · Friends Market · Agri Solutions</p><a href="#contact">Explore More →</a></div></div>
+</div></div></section>
+<div class="trust-strip"><div class="trust-inner"><span>❤️ Free Tools</span><span>🛡️ Practical & Simple</span><span>⚡ Fast Access</span><span>🌐 Mobile & Desktop</span><span>👥 For Everyone</span></div></div>
 <section class="section" id="tools"><div class="section-heading"><div style="color:#1268d6;font-weight:900;letter-spacing:1.4px;font-size:12px">FRIENDSSOLUTION TOOLKIT</div><h2>Choose a tool and use it now</h2><p>These built-in tools are interactive. Some tools needing live external data or a server are provided as links to your existing folders when available.</p></div>
 <input class="searchbar" id="search" type="search" placeholder="Search tools, e.g. GST, age, words..." aria-label="Search tools">
 <div class="tool-grid" id="toolGrid"></div>
