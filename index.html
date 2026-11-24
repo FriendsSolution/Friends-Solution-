@@ -87,10 +87,11 @@ footer{background:linear-gradient(115deg,#061c4a,#064fb1,#087fd2);border-top:5px
 .banner-connect{display:inline-block;margin-top:10px;background:#ffda2d;color:#082657;border-radius:30px;padding:8px 16px;font-size:clamp(13px,1.5vw,18px);font-weight:1000;box-shadow:0 4px 0 #a75b00}
 .banner-connect b{color:#e34b19;padding:0 5px}
 .banner-apps{grid-column:1/-1;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px}
-.banner-apps>div{min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:2px;padding:8px 5px;border:1px solid #ffffffa8;border-radius:13px;background:linear-gradient(145deg,#fff,#eaf5ff);color:#092b67;box-shadow:0 3px 8px #00183c55}
+.banner-apps>div,.banner-apps>a{min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:2px;padding:8px 5px;border:1px solid #ffffffa8;border-radius:13px;background:linear-gradient(145deg,#fff,#eaf5ff);color:#092b67;box-shadow:0 3px 8px #00183c55}
 .banner-apps span{font-size:clamp(22px,3vw,34px);line-height:1.1}
 .banner-apps strong{font-size:clamp(11px,1.25vw,15px);line-height:1.1;font-weight:950}
 .banner-apps small{font-size:clamp(9px,1vw,12px);line-height:1.1;color:#415777;font-weight:700}
+.banner-tool-link{text-decoration:none}.banner-tools-cta{display:inline-block;background:linear-gradient(#ffe34b,#ffc51b);color:#082657!important;border:2px solid #fff2a3;border-radius:22px;padding:7px 14px;font-size:clamp(11px,1.25vw,14px);font-weight:1000;text-decoration:none;box-shadow:0 3px 0 #a75b00}.banner-tool-link:focus-visible,.banner-tools-cta:focus-visible{outline:3px solid #fff;outline-offset:3px}
 .contact{grid-column:1/-1;display:flex;align-items:center;justify-content:center;gap:clamp(10px,3vw,35px);flex-wrap:wrap;padding:9px 14px;border:2px solid #fff5b4;background:linear-gradient(90deg,#fff8c7,#fff);border-radius:12px;color:#092b67;font-size:clamp(12px,1.35vw,16px);font-weight:900}
 .contact a{color:#092b67;font-weight:950}
 .location{margin:0;background:linear-gradient(#ffe34b,#ffc51b);color:#082657;padding:7px 14px;border-radius:8px;font-size:clamp(11px,1.2vw,14px)}
@@ -106,7 +107,7 @@ footer{background:linear-gradient(115deg,#061c4a,#064fb1,#087fd2);border-top:5px
  .banner-slogan{font-size:15px}
  .banner-connect{font-size:12px;padding:7px 10px;margin:0;white-space:nowrap}
  .banner-apps{grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
- .banner-apps>div{padding:7px 3px;min-height:72px;border-radius:10px}
+ .banner-apps>div,.banner-apps>a{padding:7px 3px;min-height:72px;border-radius:10px}
  .banner-apps span{font-size:25px}
  .banner-apps strong{font-size:10px}
  .banner-apps small{font-size:9px}
@@ -130,10 +131,10 @@ footer{background:linear-gradient(115deg,#061c4a,#064fb1,#087fd2);border-top:5px
   <div><span>▶️</span><strong>Friend'sTube</strong><small>Video Platform</small></div>
   <div><span>📸</span><strong>InstaFriend</strong><small>Photo Sharing</small></div>
   <div><span>🛒</span><strong>Friends Market</strong><small>Online Shopping</small></div>
-  <div><span>🧮</span><strong>Friends Calculator</strong><small>Tools & Utilities</small></div>
+  <a class="banner-tool-link" href="Tools/" aria-label="Open all 25 FriendsSolution tools"><span>🧮</span><strong>Friends Calculator</strong><small>25 Tools & Utilities</small></a>
   <div><span>🌱</span><strong>AUL Agro</strong><small>Agri Solutions</small></div>
 </div>
-<div class="contact"><div>✉ <a href="mailto:friendssolution99@gmail.com">friendssolution99@gmail.com</a></div><div>🌐 <a href="https://friendssolution.github.io/">https://friendssolution.github.io</a></div><span class="location">FRIENDS SOLUTION · BHUBANESWAR, ODISHA</span></div>
+<div class="contact"><div>✉ <a href="mailto:friendssolution99@gmail.com">friendssolution99@gmail.com</a></div><div>🌐 <a href="https://friendssolution.github.io/">https://friendssolution.github.io</a></div><a class="banner-tools-cta" href="Tools/">OPEN 25 FREE TOOLS · INSTALL ON MOBILE ↗</a><span class="location">FRIENDS SOLUTION · BHUBANESWAR, ODISHA</span></div>
 </div></div>
 <header><nav class="nav">
 <img class="logo" src="friends-solution-logo.png" alt="FriendsSolution logo">
